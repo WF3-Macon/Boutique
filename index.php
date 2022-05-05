@@ -23,6 +23,13 @@
                 <!-- Menu des catégories -->
                 <div class="col-3">
                     <h2 class="fs-4 mb-3">Catégories</h2>
+
+                    <!-- Chargement en cours... -->
+                    <div class="spinner-border text-warning spinner-category" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+
+                    <!-- Menu -->
                     <nav class="nav flex-column gap-2">
                         <a class="nav-link p-0" href="#">Link</a>
                         <a class="nav-link p-0" href="#">Link</a>
@@ -34,13 +41,18 @@
                 <div class="col-9">
                     <h2 class="fs-4 mb-3">Articles</h2>
 
+                    <!-- Chargement en cours... -->
+                    <div class="spinner-border text-warning spinner-category" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+
                     <!-- Error fetch() -->
                     <div id="error" class="alert alert-danger d-none"></div>
 
                     <!-- Listes des articles -->
                     <div class="row">
                         <div class="col-3 mb-5">
-                            <img src="https://picsum.photos/300" alt="Photo" class="rounded img-fluid">
+                            <img src="https://picsum.photos/300" alt="Photo" class="rounded w-100">
                             <p class="mt-2 mb-0 fw-bold">Titre de l'article</p>
                             <p>12 €</p>
                             <a href="product.php?id=" class="btn btn-warning">
