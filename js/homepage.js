@@ -35,3 +35,25 @@ fetch('https://fakestoreapi.com/products/categories')
 /**
  * Articles
  */
+fetch('https://fakestoreapi.com/products?limit=16')
+    .then(res => res.json())
+    .then(products => {
+        // Cacher le loader
+        const loader = document.querySelector('.spinner-article');
+        loader.classList.add('d-none');
+
+        // Sélection la ligne (#listProducts)
+        const row = document.querySelector('#listProducts');
+
+        products.forEach(product => {
+            // Création de la carte produit en HTML
+            let article = cardProduct(product);
+
+            // Concaténation de la carte au code existant dans la ligne
+            row.innerHTML += article;
+        });
+
+    })
+    .catch(error => {
+        errorAlert(error.message, '.alert-danger');
+    });
