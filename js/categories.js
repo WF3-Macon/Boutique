@@ -5,5 +5,26 @@
 /**
  * Affichage des articles selon la catégorie
  */
+
+// Récupération de la valeur du paramètre d'URL "name"
 const categoryName = queryParam('name');
-alert(categoryName);
+
+fetch(`https://fakestoreapi.com/products/category/${categoryName}`)
+    .then(res => res.json())
+    .then(products => {
+        // Cacher le loader
+        const loader = document.querySelector('.spinner-article');
+        loader.classList.add('d-none');
+
+        // Récupération de la ligne qui contiendra les articles
+        const row = document.querySelector('.row');
+
+        // Boucler sur les produits reçus
+        products.forEach(product => {
+            let card = cardProduct(product);
+            row.innerHTML += card;
+        });
+    })
+    .catch(error => {
+        errorAlert(error.message, '.alert-danger');
+    });
