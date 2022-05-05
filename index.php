@@ -34,8 +34,10 @@
                     <h2 class="fs-4 mb-3">Catégories</h2>
 
                     <!-- Chargement en cours... -->
-                    <div class="spinner-border text-warning spinner-category" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                    <div class="text-left spinner-category py-5">
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                     </div>
 
                     <!-- Menu -->
@@ -49,8 +51,10 @@
                     <h2 class="fs-4 mb-3">Articles</h2>
 
                     <!-- Chargement en cours... -->
-                    <div class="spinner-border text-warning spinner-article" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                    <div class="text-center spinner-article py-5">
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                     </div>
 
                     <!-- Error fetch() -->
