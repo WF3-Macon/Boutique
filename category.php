@@ -28,7 +28,7 @@
 
         <main class="container pt-5">
             <h2 class="fs-4 mb-3">
-                Catégorie : <span class="category-name">???</span>
+                Catégorie : <span class="category-name"></span>
             </h2>
 
             <!-- Chargement en cours... -->

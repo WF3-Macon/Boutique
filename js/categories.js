@@ -9,6 +9,10 @@
 // Récupération de la valeur du paramètre d'URL "name"
 const categoryName = queryParam('name');
 
+// Affiche la catégorie sur la page
+const content = document.querySelector('.category-name');
+content.innerText = categoryName;
+
 fetch(`https://fakestoreapi.com/products/category/${categoryName}`)
     .then(res => res.json())
     .then(products => {
