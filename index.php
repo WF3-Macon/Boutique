@@ -64,6 +64,6 @@
                     <div id="listProducts" class="row"></div>
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>

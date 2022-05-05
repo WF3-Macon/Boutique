@@ -33,3 +33,15 @@ const cardProduct = (product) => {
         </a>
     </div>`;
 }
+
+/**
+ * Récupération du paramètre de la requête
+ * Utilisation : const valeur = queryParam('nom_du_paramètre');
+ * 
+ * @param String param
+ * @return String
+ */
+const queryParam = (param) => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
