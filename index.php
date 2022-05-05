@@ -61,11 +61,7 @@
                     <div id="error" class="alert alert-danger d-none"></div>
 
                     <!-- Listes des articles -->
-                    <div id="listProducts" class="row">
-
-                        <!-- Carte d'un article -->
-                        
-                    </div>
+                    <div id="listProducts" class="row"></div>
                 </div>
             </div>
         </div>
