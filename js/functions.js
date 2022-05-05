@@ -10,8 +10,10 @@
  * @param Element element
  * @return Void
  */
-const error = (message, element) => {
-    
+const errorAlert = (message, element) => {
+    const el = document.querySelector(element);
+    el.innerText = message;
+    el.classList.remove('d-none');
 }
 
 
