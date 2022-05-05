@@ -12,6 +12,11 @@ const idProduct = queryParam('id');
 fetch(`https://fakestoreapi.com/products/${idProduct}`)
     .then(res => res.json())
     .then(product => {
+        // Cacher le loader
+        const loader = document.querySelector('.spinner-article');
+        loader.classList.add('d-none');
+
+        // Sélectionne la ligne où ira le détail de l'article
         const row = document.querySelector('.row');
 
         const details = `<div class="col-4">
